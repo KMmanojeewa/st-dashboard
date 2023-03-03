@@ -153,6 +153,7 @@ class SecurityController extends Controller
     public function StudentLoginWithPasswordForm()
     {
         $fields = new FieldList(
+            LiteralField::create('EnterPassword', 'Enter Your Password'),
             PasswordField::create('Password', 'Password'),
         );
         $actions = new FieldList(
@@ -165,6 +166,7 @@ class SecurityController extends Controller
     public function StudentLoginWithRegisterForm()
     {
         $fields = new FieldList(
+            LiteralField::create('LoginWithRegistrationNumber', 'Login With Registration Number'),
             TextField::create('RegistrationNumber', 'Registration Number')
         );
         $actions = new FieldList(
