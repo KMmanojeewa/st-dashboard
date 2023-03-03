@@ -1,0 +1,11 @@
+---
+Name: events_routes
+---
+SilverStripe\Control\Director:
+  rules:
+    'welcome': 'STDashboard\Controller\WelcomeController'
+    'sec': 'STDashboard\Controller\SecurityController'
+    'dashboard': 'STDashboard\Controller\DashboardController'
+    'portal': 'STDashboard\Controller\PortalController'
+#    'service': 'BLEvents\Controller\ServiceController'
+
